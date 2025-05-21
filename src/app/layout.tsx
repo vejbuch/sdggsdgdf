@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CopilotKit
-          publicApiKey={process.env.NEXT_PUBLIC_CPK_PUBLIC_API_KEY}
+          runtimeUrl={process.env.NEXT_PUBLIC_CPK_RUNTIME_URL} // <- zde použijeme self-hosted backend
           showDevConsole={false}
         >
           <GlobalStateProvider>
